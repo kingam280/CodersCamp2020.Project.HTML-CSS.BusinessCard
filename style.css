@@ -6,6 +6,16 @@
 
 body {
   font-size: 10px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fff;
+}
+
+button {
+  color: #fff;
+  background: linear-gradient(20deg, #249899 14%, #6fe2e3 80.5%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px #e5e5e5;
 }
 
 /* -----------------------------
@@ -58,7 +68,7 @@ nav ul > li {
 }
 
 nav ul > li:hover {
-  background-color: #ffbb7b;
+  background-color: #6fe2e3;
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -71,7 +81,7 @@ header {
   position: relative;
   background-image: url("imgs/header_mobile.jpg");
   margin: calc(2rem + 10%) 0 5%;
-  height: 20vh;
+  height: 25vh;
   background-size: cover;
   background-position: center;
 }
@@ -101,10 +111,33 @@ header h2 {
 }
 
 /* -----------------------------
+UNDER-HEADER
+----------------------------- */
+#under-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#under-header h3 {
+  width: 100%;
+  padding: 0 5%;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+#under-header button {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  width: 40%;
+  margin: 5%;
+}
+
+/* -----------------------------
 MEDIA QUERIES
 ----------------------------- */
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   nav label {
     display: none;
   }
@@ -130,5 +163,14 @@ MEDIA QUERIES
   }
   header h2 {
     font-size: 1.8rem;
+  }
+  #under-header h3 {
+    font-size: 1.6rem;
+  }
+  #under-header button {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    width: 15%;
+    margin: 2.5%;
   }
 }
