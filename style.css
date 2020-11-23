@@ -6,7 +6,8 @@
 
 body {
   font-size: 10px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "PT Serif", serif;
+
   background-color: #fff;
 }
 
@@ -15,7 +16,7 @@ button {
   background: linear-gradient(20deg, #249899 14%, #6fe2e3 80.5%);
   border: 1px solid white;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px 1px #e5e5e5;
+  box-shadow: 2px 2px 2px 1px #f5f5f5;
   transition: 0.3s;
 }
 
@@ -24,6 +25,19 @@ button:hover {
   color: #249899;
   border: 1px solid #249899;
   cursor: pointer;
+}
+
+section,
+article {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2;
+  padding: 2% 0;
 }
 
 /* -----------------------------
@@ -40,6 +54,7 @@ nav label {
   right: 0;
   margin: 5%;
   font-size: 2rem;
+  text-shadow: 1px 1px 5px white;
   z-index: 10;
 }
 
@@ -79,7 +94,7 @@ nav ul > li {
 nav ul > li:hover {
   background-color: #6fe2e3;
   cursor: pointer;
-  transform: scale(1.1);
+  letter-spacing: 5px;
 }
 
 /* -----------------------------
@@ -89,8 +104,8 @@ HEADER
 header {
   position: relative;
   background-image: url("imgs/header_mobile.jpg");
-  margin: calc(2rem + 10%) 0 5%;
-  height: 25vh;
+  margin: 12.5vh 0 0;
+  height: 50vh;
   background-size: cover;
   background-position: center;
 }
@@ -106,6 +121,7 @@ header h1 {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 1.4rem;
+  text-shadow: 0 0 5px black;
 }
 header h2 {
   position: absolute;
@@ -117,15 +133,17 @@ header h2 {
   color: white;
   text-transform: uppercase;
   font-size: 1.2rem;
+  text-shadow: 0 0 5px black;
 }
 
 /* -----------------------------
 UNDER-HEADER
 ----------------------------- */
 #under-header {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  height: 37.5vh;
+  align-content: center;
 }
 
 #under-header h3 {
@@ -137,9 +155,89 @@ UNDER-HEADER
 }
 #under-header button {
   font-size: 1rem;
-  line-height: 2.5rem;
+  line-height: 2.5;
   width: 40%;
   margin: 5%;
+}
+
+/* -----------------------------
+ABOUT
+----------------------------- */
+
+#about {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+  padding: 5%;
+}
+
+#about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 70%;
+  height: 100%;
+  background-color: #f5f5f5;
+  z-index: -10;
+}
+
+#about h2 {
+  text-align: left;
+}
+
+#about article {
+  padding: 4%;
+  background-color: white;
+  box-shadow: 2px 3px 5px 2px #fbf8ef;
+}
+
+#about img {
+  width: 100%;
+  padding: 5%;
+  border-radius: 50%;
+}
+
+.short-info,
+.long-info {
+  width: 100%;
+  padding: 5%;
+  font-size: 0.8rem;
+  line-height: 2;
+  text-align: justify;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+/* -----------------------------
+SKILLS
+----------------------------- */
+
+#skills {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+#skills::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 70%;
+  height: 100%;
+  background-color: #f5f5f5;
+  z-index: -10;
+}
+
+#skills h2 {
+  text-align: right;
 }
 
 /* -----------------------------
@@ -147,6 +245,9 @@ MEDIA QUERIES
 ----------------------------- */
 
 @media (min-width: 1280px) {
+  h2 {
+    font-size: 2.4rem;
+  }
   nav label {
     display: none;
   }
@@ -155,15 +256,13 @@ MEDIA QUERIES
     justify-content: flex-end;
   }
   nav ul > li {
-    width: 15%;
-    margin: 5px 0;
+    width: 20%;
     padding: 2%;
     font-size: 1.8rem;
   }
   header {
     background-image: url("imgs/header_pc.jpg");
-    margin: calc(2rem + 5%) 0 2.5%;
-    height: 35vh;
+    margin: 10vh 0 0;
   }
 
   header h1 {
@@ -173,13 +272,39 @@ MEDIA QUERIES
   header h2 {
     font-size: 1.8rem;
   }
+  #under-header {
+    height: 40vh;
+  }
   #under-header h3 {
     font-size: 1.6rem;
   }
   #under-header button {
     font-size: 1.4rem;
-    line-height: 3rem;
+    line-height: 3;
     width: 15%;
     margin: 2.5%;
+  }
+  #about {
+    margin-bottom: 5%;
+  }
+  #about img {
+    width: 20%;
+    padding: 1%;
+    border-radius: 50%;
+    align-self: flex-start;
+  }
+  .short-info,
+  .long-info {
+    padding: 4%;
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: justify;
+  }
+  .short-info {
+    width: 30%;
+  }
+
+  .long-info {
+    width: 50%;
   }
 }
