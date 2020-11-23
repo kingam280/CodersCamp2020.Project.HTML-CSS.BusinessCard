@@ -13,9 +13,17 @@ body {
 button {
   color: #fff;
   background: linear-gradient(20deg, #249899 14%, #6fe2e3 80.5%);
-  border: none;
+  border: 1px solid white;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px #e5e5e5;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #fff;
+  color: #249899;
+  border: 1px solid #249899;
+  cursor: pointer;
 }
 
 /* -----------------------------
@@ -65,6 +73,7 @@ nav ul > li {
   text-transform: uppercase;
   list-style: none;
   overflow: hidden;
+  transition: 0.3s;
 }
 
 nav ul > li:hover {
