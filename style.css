@@ -3,3 +3,69 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-size: 10px;
+}
+
+nav {
+  width: 100%;
+}
+
+nav label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5%;
+  font-size: 2rem;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+nav ul {
+  display: none;
+  width: 100%;
+
+  flex-wrap: wrap;
+}
+
+#menu:checked + ul {
+  display: flex;
+}
+
+nav ul > li {
+  width: 100%;
+  padding: 3%;
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+nav ul > li:hover {
+  background-color: #ffbb7b;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  nav {
+  }
+  nav label {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul > li {
+    width: 15%;
+    padding: 2%;
+    font-size: 1.8rem;
+  }
+}
