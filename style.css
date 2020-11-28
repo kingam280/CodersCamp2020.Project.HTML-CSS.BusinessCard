@@ -2,13 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 10px;
   font-family: "PT Serif", serif;
-
   background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 button {
@@ -32,12 +37,19 @@ article {
   display: flex;
   flex-wrap: wrap;
 }
+article {
+  width: 100%;
+  padding: 4%;
+  background-color: white;
+  box-shadow: 2px 3px 10px 2px #d6d6d6;
+}
 
 h2 {
   width: 100%;
   font-size: 1.6rem;
   line-height: 2;
-  padding: 2% 0;
+  padding: 2% 10%;
+  text-shadow: 2px 2px 5px #d6d6d6;
 }
 
 /* -----------------------------
@@ -169,7 +181,7 @@ ABOUT
   width: 100%;
   height: 100%;
   margin-bottom: 5%;
-  padding: 5%;
+  padding: 5% 5%;
 }
 
 #about::after {
@@ -186,12 +198,6 @@ ABOUT
 
 #about h2 {
   text-align: left;
-}
-
-#about article {
-  padding: 4%;
-  background-color: white;
-  box-shadow: 2px 3px 5px 2px #fbf8ef;
 }
 
 #about img {
@@ -221,7 +227,7 @@ SKILLS
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 5%;
+  padding: 5% 5%;
 }
 
 #skills::after {
@@ -238,6 +244,40 @@ SKILLS
 
 #skills h2 {
   text-align: right;
+}
+
+#skills article {
+  justify-content: space-around;
+}
+
+#skills div {
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+}
+
+#skills i {
+  font-size: 2rem;
+  padding: 5%;
+  color: #249899;
+}
+
+#skills h3 {
+  font-size: 1.2rem;
+  padding: 2.5%;
+}
+
+#skills p {
+  font-size: 0.8rem;
+  padding: 2.5%;
+}
+
+/* -----------------------------
+CONTACT
+----------------------------- */
+
+#contact h2 {
+  text-align: center;
 }
 
 /* -----------------------------
@@ -284,9 +324,6 @@ MEDIA QUERIES
     width: 15%;
     margin: 2.5%;
   }
-  #about {
-    margin-bottom: 5%;
-  }
   #about img {
     width: 20%;
     padding: 1%;
@@ -303,8 +340,19 @@ MEDIA QUERIES
   .short-info {
     width: 30%;
   }
-
   .long-info {
     width: 50%;
+  }
+  #skills div {
+    width: 30%;
+  }
+  #skills i {
+    font-size: 3rem;
+  }
+  #skills h3 {
+    font-size: 1.6rem;
+  }
+  #skills p {
+    font-size: 1.2rem;
   }
 }

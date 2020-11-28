@@ -19,10 +19,10 @@
         <label for="menu"><i class="fas fa-bars show"></i></label>
         <input type="checkbox" id="menu">
         <ul>
-            <li>About me</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li><a href=#about>About me</a></li>
+            <li><a href=#skills>Skills</a></li>
+            <li><a href=#portfolio>Portfolio</a></li>
+            <li><a href=#contact>Contact</a></li>
         </ul>
     </nav>
     <header>
@@ -37,7 +37,7 @@
     <section id="about">
         <h2>About me</h2>
         <article>
-            <img src="/imgs/me.jpg" alt="photo of me">
+            <img src="./imgs/me.jpg" alt="photo of me">
             <div class="short-info">
                 <p><span class="strong">Full name: </span>Kinga Mamak</p>
                 <p><span class="strong">Age: </span>23 years</p>
@@ -50,15 +50,25 @@
     </section>
     <section id="skills">
         <h2>Skills</h2>
-        <div>
+        <article>
+            <div>
+                <i class="fas fa-laptop-code"></i>
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div>
+                <i class="fas fa-microscope"></i>
+                <h3>UX</h3>
+                <p>Figma, Quantitative research</p>
+            </div>
+            <div>
+                <i class="fas fa-users"></i>
 
-        </div>
-        <div>
 
-        </div>
-        <div>
-
-        </div>
+                <h3>Other</h3>
+                <p>English C1, Teamwork skills</p>
+            </div>
+        </article>
     </section>
     <section id="portfolio">
         <h2>Portfolio</h2>
@@ -72,10 +82,10 @@
     <section id="contact">
         <h2>Contact me</h2>
         <form>
-            <input type="text">
-            <input type="email">
-            <input type="text">
-            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="text" placeholder="Topic" required>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" required></textarea>
             <button>Send</button>
         </form>
     </section>
