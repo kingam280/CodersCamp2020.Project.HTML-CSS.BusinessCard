@@ -306,9 +306,11 @@ PROJECTS
   height: 100%;
 }
 
-.project-info button {
-  margin: 5%;
-  padding: 2.5% 5%;
+.project-info a button {
+  display: block;
+  padding: 15px 20px;
+  margin: 10px;
+  box-shadow: none;
 }
 
 .project img {
