@@ -347,7 +347,7 @@ CONTACT
   width: 95%;
   background-color: #249899;
   padding: 5%;
-  margin: 5% auto 0;
+  margin: 2.5% auto 0;
 }
 
 .social-media::after {
@@ -377,14 +377,14 @@ CONTACT
 .social-media img {
   width: 40px;
   height: 40px;
-  margin: 5px;
+  margin: 5%;
   border-radius: 15px;
   box-shadow: 0 0 10px 2px white;
   transition: 0.2s;
 }
 
 .social-media img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .social-media p {
@@ -413,10 +413,6 @@ form textarea {
   border: 1px solid gray;
 }
 
-form input:active,
-form textarea:active {
-}
-
 form button {
   display: block;
   font-size: 1rem;
@@ -429,9 +425,115 @@ form button {
 MEDIA QUERIES
 ----------------------------- */
 
-@media (min-width: 1280px) {
+@media (min-width: 481px) {
   section h2 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+  }
+  header h1 {
+    letter-spacing: 7px;
+    font-size: 1.8rem;
+  }
+  header h2 {
+    font-size: 1.4rem;
+  }
+  nav ul > li,
+  #under-header h3,
+  #skills h3,
+  #contact h3 {
+    font-size: 1.3rem;
+  }
+  #under-header button {
+    width: 25%;
+    margin: 5%;
+  }
+  .short-info,
+  .long-info {
+    font-size: 1rem;
+  }
+  #skills i {
+    font-size: 2.5rem;
+  }
+
+  #skills p {
+    font-size: 1rem;
+  }
+  .project {
+    width: 90%;
+    margin: 2.5% auto;
+  }
+  .project-info a button {
+    font-size: 1rem;
+  }
+  .social-media img {
+    width: 45px;
+    height: 45px;
+  }
+  .social-media p {
+    font-size: 1rem;
+  }
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+}
+
+@media (orientation: landscape), (min-width: 568px) {
+  article {
+    padding: 2%;
+  }
+  header h1,
+  header h2 {
+    padding: 3%;
+  }
+  #under-header button {
+    margin: 3%;
+    width: 20%;
+  }
+  #about img {
+    width: 50%;
+    padding: 5%;
+  }
+  .short-info {
+    width: 50%;
+    align-self: center;
+  }
+  .long-info {
+    padding-top: 0;
+    width: 100%;
+  }
+  #skills div {
+    width: 33%;
+    padding: 5% 3%;
+  }
+  #skills div:nth-of-type(2) {
+    border-left: 3px dotted #249899;
+    border-right: 3px dotted #249899;
+  }
+  .project {
+    width: 45%;
+    margin: 2.5% auto;
+  }
+  .project img {
+    width: 100%;
+  }
+  #contact h3 {
+    padding: 2.5%;
+  }
+  .social-media,
+  form {
+    width: 80%;
+  }
+  form {
+    padding: 5% 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  article {
+    padding: 3%;
+  }
+  section h2 {
+    font-size: 2.2rem;
   }
   nav label {
     display: none;
@@ -441,34 +543,31 @@ MEDIA QUERIES
     justify-content: flex-end;
   }
   nav ul > li {
-    width: 20%;
-    padding: 2%;
-    font-size: 1.8rem;
+    width: 22%;
+    padding: 4% 2%;
+    font-size: 1.5rem;
   }
   header {
     background-image: url("imgs/header_pc.jpg");
     margin: 10vh 0 0;
   }
-
   header h1 {
-    letter-spacing: 15px;
-    font-size: 2.8rem;
-    padding: 2%;
+    letter-spacing: 12px;
+    font-size: 2.4rem;
   }
   header h2 {
-    font-size: 1.8rem;
-    padding: 2%;
+    font-size: 1.4rem;
   }
   #under-header {
     height: 40vh;
   }
   #under-header h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   #under-header button {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     line-height: 3;
-    width: 15%;
+    width: 20%;
     margin: 2.5%;
   }
   #about img {
@@ -479,24 +578,104 @@ MEDIA QUERIES
   }
   .short-info,
   .long-info {
-    padding: 4% 0 4% 4%;
-    font-size: 1.2rem;
+    padding: 3% 0 3% 3%;
+    font-size: 1rem;
     line-height: 2;
     text-align: justify;
   }
   .short-info {
     width: 25%;
+    height: 100%;
+    align-self: flex-start;
     border-right: 4px dotted #249899;
   }
   .long-info {
     width: 55%;
   }
-  #skills div {
-    width: 33%;
+  #skills i {
+    font-size: 2.8rem;
+  }
+  #skills h3 {
+    font-size: 1.3rem;
+  }
+  #skills p {
+    font-size: 1.1rem;
+  }
+  #contact {
+    justify-content: center;
+  }
+  .social-media {
+    width: 45%;
+    padding: 5%;
+    margin: 0;
+  }
+  .social-media::after {
+    bottom: 30%;
+    left: 100%;
+    transform: translate(-50%, 0) rotate(45deg);
+  }
+  #contact h3 {
+    font-size: 1.4rem;
+    padding-bottom: 0;
+  }
+  .social-media img {
+    width: 50px;
+    height: 50px;
+    margin: 5%;
+  }
+  .social-media p {
+    font-size: 1rem;
+  }
+  form {
+    padding: 2.5%;
+    width: 45%;
+    margin: 0;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  article {
+    padding: 4%;
+  }
+  section h2 {
+    font-size: 2.4rem;
+  }
+  nav ul > li {
+    font-size: 1.8rem;
+    padding: 2%;
+  }
+  header h1 {
+    letter-spacing: 15px;
+    font-size: 2.8rem;
+    padding: 2%;
+  }
+  header h2 {
+    font-size: 1.8rem;
+    padding: 2%;
+  }
+  #under-header h3 {
+    font-size: 1.6rem;
+  }
+  #under-header button {
+    font-size: 1.4rem;
+    width: 15%;
+    margin: 2.5%;
+  }
+  .short-info,
+  .long-info {
+    padding: 4% 0 4% 4%;
+    font-size: 1.2rem;
   }
   #skills div:nth-of-type(2) {
-    border-left: 4px dotted #249899;
-    border-right: 4px dotted #249899;
+    border-left-width: 4px;
+    border-right-width: 4px;
   }
   #skills i {
     font-size: 3rem;
@@ -520,22 +699,8 @@ MEDIA QUERIES
     font-size: 1.2rem;
     box-shadow: none;
   }
-  #contact {
-    justify-content: center;
-  }
-  .social-media {
-    width: 45%;
-    padding: 5%;
-    margin: 0;
-  }
-  .social-media::after {
-    bottom: 30%;
-    left: 100%;
-    transform: translate(-50%, 0) rotate(45deg);
-  }
   #contact h3 {
     font-size: 1.6rem;
-    padding-bottom: 0;
   }
   .social-media img {
     width: 55px;
@@ -544,16 +709,8 @@ MEDIA QUERIES
   .social-media p {
     font-size: 1.2rem;
   }
-  form {
-    padding: 2.5%;
-    width: 45%;
-    margin: 0;
-  }
-
   form input,
   form textarea {
     font-size: 1.2rem;
-    padding: 10px;
-    margin: 10px auto;
   }
 }
