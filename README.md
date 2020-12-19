@@ -27,7 +27,7 @@ HTML i CSS
 
 Na górze strony znajduje się responsywna nawigacja. Po kliknięciu na wybrany element następuje przekierowanie do wybranej sekcji. Po najechaniu kursorem wybrana sekcja podświetla się i zwiększa się letter-spacing. W widoku mobilnym menu pokazuje się i chowa po kliknięciu.
 
-Sekcja tytułowa zajmuje 100% dostępnej wysokości urządzenia. Po kliknięciu w przycisk "Contact me" następuje przekierowanie do sekcji kontaktowej.
+Sekcja tytułowa zajmuje 100% dostępnej wysokości urządzenia. Po kliknięciu w przycisk "Contact me" następuje przekierowanie do sekcji kontaktowej. Po kliknięciu "Check my CV" w nowej karcie otwiera się plik z CV.
 
 Sekcja o mnie została podzielona na trzy części. Pierwsza to zdjęcie, druga to skrócone informacje, trzecia to pełen opis osoby.
 
