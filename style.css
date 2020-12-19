@@ -161,6 +161,16 @@ UNDER-HEADER
   font-size: 1.2rem;
   line-height: 1.5;
 }
+
+#under-header a {
+  color: white;
+  transition: 0.3s;
+}
+
+#under-header button:hover a {
+  color: #249899;
+}
+
 #under-header button {
   font-size: 1rem;
   line-height: 2.5;
