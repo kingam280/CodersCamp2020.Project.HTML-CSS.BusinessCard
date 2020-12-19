@@ -281,6 +281,9 @@ SKILLS
 /* -----------------------------
 PROJECTS
 ----------------------------- */
+#portfolio {
+  padding-top: 2.5%;
+}
 #portfolio h2 {
   text-align: center;
 }
@@ -571,7 +574,7 @@ MEDIA QUERIES
   }
   nav ul > li {
     width: 22%;
-    padding: 4% 2%;
+    /* padding: 4% 2%; */
     font-size: 1.5rem;
   }
   header {
